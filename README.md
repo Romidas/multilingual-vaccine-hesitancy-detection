@@ -6,9 +6,11 @@ This project investigates vaccine hesitancy detection in multilingual social med
 
 The dataset consists of English, Hindi, and code-mixed YouTube comments manually annotated into three classes:
 
-* Pro-vaccine
-* Anti-vaccine
+* Pro-Vaccine
+* Anti-Vaccine
 * Neutral
+
+---
 
 ## Models Implemented
 
@@ -16,11 +18,15 @@ The dataset consists of English, Hindi, and code-mixed YouTube comments manually
 * Convolutional Neural Network (CNN)
 * Multilingual BERT (mBERT)
 
+---
+
 ## Dataset
 
-* ~3,500 collected YouTube comments
+* Approximately 3,500 collected YouTube comments
 * 320 manually labelled comments
-* English, Hindi, and code-mixed content
+* English, Hindi, and English-Hindi code-mixed content
+
+---
 
 ## Results
 
@@ -30,20 +36,47 @@ The dataset consists of English, Hindi, and code-mixed YouTube comments manually
 | CNN                | 65.62%   | 62.19%   |
 | mBERT              | 57.81%   | 57.59%   |
 
+---
+
 ## Key Findings
 
-* CNN achieved the best overall performance.
+* CNN achieved the best overall performance on the manually labelled dataset.
 * Preserving multilingual characters improved classification quality.
 * Transformer models did not outperform simpler architectures under limited training data.
 * Temporal analysis revealed event-driven vaccine discussions.
+* Manual annotation produced more balanced and realistic stance distributions than GPT-assisted labelling.
 
-## Technologies
+---
 
-Python, Scikit-learn, TensorFlow/Keras, Transformers, Pandas, NumPy, Matplotlib, NLP
+## Temporal Analysis
+
+### Quarterly Distribution of Vaccine Stance Labels
+
+![Quarterly Distribution](images/Quarterly_label_counts.png)
+
+### Temporal Heatmap of Vaccine Stance Distribution
+
+![Temporal Heatmap](images/temporal_heatmap.png)
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* PyTorch
+* Hugging Face Transformers
+* Plotly
+* NLP
+
+---
 
 ## Future Work
 
 * Larger annotated datasets
-* XLM-RoBERTa and IndicBERT
 * Semi-supervised learning
+* XLM-RoBERTa and IndicBERT
+* Context-aware stance classification
 * Multimodal misinformation detection
