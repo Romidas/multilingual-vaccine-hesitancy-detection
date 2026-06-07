@@ -52,11 +52,11 @@ The dataset consists of English, Hindi, and code-mixed YouTube comments manually
 
 ### Quarterly Distribution of Vaccine Stance Labels
 
-![Quarterly Distribution](images/Quarterly_label_counts.png)
+![Quarterly Distribution](images/quarterly_vaccine_stance_distribution.png)
 
 ### Temporal Heatmap of Vaccine Stance Distribution
 
-![Temporal Heatmap](images/temporal_heatmap.png)
+![Temporal Heatmap](images/temporal_vaccine_stance_heatmap.png)
 
 ---
 
